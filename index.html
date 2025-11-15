@@ -59,7 +59,7 @@ label{display:block;margin-bottom:8px;font-weight:600;color:#1e293b;font-size:1e
 .active-result:hover{background:#eef2ff !important;color:#6366f1 !important;font-weight:600}
 .active-result.selected{background:#6366f1 !important;color:#fff !important;font-weight:700}
 
-/* چیپ‌های چندانتخابی - نمایش ردیفی زیر هم */
+/* چیپ‌های چندانتخابی */
 .chosen-trigger .chosen-single-value {
   display: block !important;
   margin: 6px 12px 6px 36px;
@@ -150,22 +150,7 @@ textarea{
               <div class="chosen-trigger"><span class="chosen-placeholder">انتخاب یا تایپ کنید</span><div class="chosen-arrow"><i class="fas fa-chevron-down"></i></div></div>
               <div class="chosen-drop">
                 <div class="chosen-search"><input type="text" placeholder="جستجو یا اضافه کردن..."></div>
-                
-
-<ul class="chosen-results">
-  <li class="active-result" data-value="مرکز همایش‌های بین‌المللی برج میلاد تهران">مرکز همایش‌های بین‌المللی برج میلاد تهران</li>
-  <li class="active-result" data-value="نمایشگاه بین‌المللی تهران">نمایشگاه بین‌المللی تهران</li>
-  <li class="active-result" data-value="مرکز همایش‌های بین‌المللی صدا و سیما">مرکز همایش‌های بین‌المللی صدا و سیما</li>
-  <li class="active-result" data-value="مرکز همایش‌های رازی">مرکز همایش‌های رازی</li>
-  <li class="active-result" data-value="مرکز همایش‌های بین‌المللی ایران مال">مرکز همایش‌های بین‌المللی ایران مال</li>
-  <li class="active-result" data-value="نمایشگاه بین‌المللی شهر آفتاب">نمایشگاه بین‌المللی شهر آفتاب</li>
-  <li class="active-result" data-value="نمایشگاه بین‌المللی مشهد">نمایشگاه بین‌المللی مشهد</li>
-  <li class="active-result" data-value="نمایشگاه بین‌المللی اصفهان">نمایشگاه بین‌المللی اصفهان</li>
-  <li class="active-result" data-value="نمایشگاه بین‌المللی شیراز">نمایشگاه بین‌المللی شیراز</li>
-  <li class="active-result" data-value="نمایشگاه بین‌المللی تبریز">نمایشگاه بین‌المللی تبریز</li>
-</ul>
-
-
+                <ul class="chosen-results"></ul>
               </div>
               <input type="hidden" name="group" value="">
             </div>
@@ -547,21 +532,15 @@ textarea{
               <input type="hidden" name="marketing_manager" value="">
             </div>
           </div>
-            <div><label>تاریخ شروع بازاریابی</label>
-              <div class="date-field">
-                <input name="marketing_start_date" type="date"
-                  style="background-color:#333; 
-                  color:#fff; 
-                  border:1px solid #222; 
-                  border-radius:12px; 
-                  padding:6px 12px; 
-                  box-shadow: inset 0 1px 3px rgba(0,0,0,0.3); 
-                  transition: all 0.2s ease;"
-           onmouseover="this.style.backgroundColor='#444'; this.style.borderColor='#555'; this.style.boxShadow='inset 0 1px 5px rgba(0,0,0,0.5)';"
-           onmouseout="this.style.backgroundColor='#333'; this.style.borderColor='#222'; this.style.boxShadow='inset 0 1px 3px rgba(0,0,0,0.3)';">
-    <span class="calendar-icon"><i class="far fa-calendar-alt" style="color:#fff;"></i></span>
-  </div>
-</div>
+          <div><label>تاریخ شروع بازاریابی</label>
+            <div class="date-field">
+              <input name="marketing_start_date" type="date"
+                style="background-color:#333; color:#fff; border:1px solid #222; border-radius:12px; padding:6px 12px; box-shadow: inset 0 1px 3px rgba(0,0,0,0.3); transition: all 0.2s ease;"
+                onmouseover="this.style.backgroundColor='#444'; this.style.borderColor='#555'; this.style.boxShadow='inset 0 1px 5px rgba(0,0,0,0.5)';"
+                onmouseout="this.style.backgroundColor='#333'; this.style.borderColor='#222'; this.style.boxShadow='inset 0 1px 3px rgba(0,0,0,0.3)';">
+              <span class="calendar-icon"><i class="far fa-calendar-alt" style="color:#fff;"></i></span>
+            </div>
+          </div>
 
           <div><label>نحوه تماس</label>
             <div class="chosen-container" data-name="contact_method">
@@ -573,22 +552,16 @@ textarea{
               <input type="hidden" name="contact_method" value="">
             </div>
           </div>
-<div>
-  <label>تاریخ تماس</label>
-  <div class="date-field">
-    <input name="marketing_start_date" type="date"
-           style="background-color:#333; 
-                  color:#fff; 
-                  border:1px solid #222; 
-                  border-radius:12px; 
-                  padding:6px 12px; 
-                  box-shadow: inset 0 1px 3px rgba(0,0,0,0.3); 
-                  transition: all 0.2s ease;"
-           onmouseover="this.style.backgroundColor='#444'; this.style.borderColor='#555'; this.style.boxShadow='inset 0 1px 5px rgba(0,0,0,0.5)';"
-           onmouseout="this.style.backgroundColor='#333'; this.style.borderColor='#222'; this.style.boxShadow='inset 0 1px 3px rgba(0,0,0,0.3)';">
-    <span class="calendar-icon"><i class="far fa-calendar-alt" style="color:#fff;"></i></span>
-  </div>
-</div>
+          <div>
+            <label>تاریخ تماس</label>
+            <div class="date-field">
+              <input name="marketing_start_date" type="date"
+                     style="background-color:#333; color:#fff; border:1px solid #222; border-radius:12px; padding:6px 12px; box-shadow: inset 0 1px 3px rgba(0,0,0,0.3); transition: all 0.2s ease;"
+                     onmouseover="this.style.backgroundColor='#444'; this.style.borderColor='#555'; this.style.boxShadow='inset 0 1px 5px rgba(0,0,0,0.5)';"
+                     onmouseout="this.style.backgroundColor='#333'; this.style.borderColor='#222'; this.style.boxShadow='inset 0 1px 3px rgba(0,0,0,0.3)';">
+              <span class="calendar-icon"><i class="far fa-calendar-alt" style="color:#fff;"></i></span>
+            </div>
+          </div>
 
           <div><label>مخاطب</label>
             <div class="chosen-container" data-name="contact_person">
@@ -625,21 +598,15 @@ textarea{
           <div style="grid-column:1/-1"><label>نکات وضعیت</label><textarea name="status_notes"></textarea></div>
           <div style="grid-column:1/-1"><label>توضیحات بازاریابی</label><textarea name="marketing_description"></textarea></div>
           <div>
-  <label>تاریخ پیگیری مجدد</label>
-  <div class="date-field">
-    <input name="marketing_start_date" type="date"
-           style="background-color:#333; 
-                  color:#fff; 
-                  border:1px solid #222; 
-                  border-radius:12px; 
-                  padding:6px 12px; 
-                  box-shadow: inset 0 1px 3px rgba(0,0,0,0.3); 
-                  transition: all 0.2s ease;"
-           onmouseover="this.style.backgroundColor='#444'; this.style.borderColor='#555'; this.style.boxShadow='inset 0 1px 5px rgba(0,0,0,0.5)';"
-           onmouseout="this.style.backgroundColor='#333'; this.style.borderColor='#222'; this.style.boxShadow='inset 0 1px 3px rgba(0,0,0,0.3)';">
-    <span class="calendar-icon"><i class="far fa-calendar-alt" style="color:#fff;"></i></span>
-  </div>
-</div>
+            <label>تاریخ پیگیری مجدد</label>
+            <div class="date-field">
+              <input name="marketing_start_date" type="date"
+                     style="background-color:#333; color:#fff; border:1px solid #222; border-radius:12px; padding:6px 12px; box-shadow: inset 0 1px 3px rgba(0,0,0,0.3); transition: all 0.2s ease;"
+                     onmouseover="this.style.backgroundColor='#444'; this.style.borderColor='#555'; this.style.boxShadow='inset 0 1px 5px rgba(0,0,0,0.5)';"
+                     onmouseout="this.style.backgroundColor='#333'; this.style.borderColor='#222'; this.style.boxShadow='inset 0 1px 3px rgba(0,0,0,0.3)';">
+              <span class="calendar-icon"><i class="far fa-calendar-alt" style="color:#fff;"></i></span>
+            </div>
+          </div>
 
         </div>
       </div>
@@ -687,18 +654,33 @@ document.querySelectorAll('.chosen-container').forEach(c => {
       });
     });
 
-    // قابلیت افزودن مقدار جدید با Enter
-    search.addEventListener('keydown', e => {
+    // قابلیت افزودن مقدار جدید با Enter + ارسال به n8n
+    search.addEventListener('keydown', async e => {
       if (e.key === 'Enter') {
         e.preventDefault();
         const val = search.value.trim();
-        if (val && !Array.from(results.children).some(li => li.textContent === val)) {
+        if (!val) return;
+
+        // اضافه کردن به منوی محلی
+        if (!Array.from(results.children).some(li => li.dataset.value === val)) {
           const li = document.createElement('li');
           li.className = 'active-result';
           li.textContent = val;
           li.dataset.value = val;
           results.appendChild(li);
         }
+
+        // ارسال به n8n برای ذخیره دائمی
+        try {
+          await fetch('http://localhost:5678/webhook/ADD_OPTION', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ field: c.dataset.name, value: val })
+          });
+        } catch (err) {
+          console.warn('ذخیره در n8n ناموفق:', err);
+        }
+
         selectValue(val);
       }
     });
@@ -707,7 +689,6 @@ document.querySelectorAll('.chosen-container').forEach(c => {
   const selectValue = val => {
     if (!val) return;
     if (c.hasAttribute('multiple')) {
-      // حالت چندانتخابی برای زمینه فعالیت
       const selected = hidden.value ? hidden.value.split(',').map(s => s.trim()) : [];
       if (!selected.includes(val)) {
         selected.push(val);
@@ -853,47 +834,82 @@ async function loadCompanyData(name) {
 document.addEventListener('DOMContentLoaded', async () => {
   try {
     const res = await fetch('http://localhost:5678/webhook/OPTIONS');
-    if (!res.ok) throw new Error('n8n در دسترس نیست');
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const json = await res.json();
     const data = json[0]?.result || {};
 
-    const fill = (name, arr) => {
-      const ul = document.querySelector(`.chosen-container[data-name="${name}"] .chosen-results`);
-      if (!ul) return;
+    const fillDropdown = (fieldName, values = []) => {
+      const container = document.querySelector(`.chosen-container[data-name="${fieldName}"]`);
+      if (!container) return;
+      const ul = container.querySelector('.chosen-results');
+
+      // حفظ مقادیر اولیه (مثل expo_year و location)
+      const existing = Array.from(ul.querySelectorAll('.active-result')).map(li => li.dataset.value);
+      const allValues = [...existing];
+
+      if (Array.isArray(values)) {
+        values.forEach(v => {
+          const val = v?.toString().trim();
+          if (val && !allValues.includes(val)) allValues.push(val);
+        });
+      }
+
       ul.innerHTML = '';
-      if (!arr || arr.length === 0) {
+      if (allValues.length === 0) {
         ul.innerHTML = '<li class="active-result" style="color:#94a3b8;padding:18px">داده‌ای موجود نیست</li>';
         return;
       }
-      arr.filter(x => x && x.toString().trim()).sort().forEach(item => {
+
+      allValues.sort().forEach(value => {
         const li = document.createElement('li');
         li.className = 'active-result';
-        li.textContent = item;
-        li.dataset.value = item;
+        li.textContent = value;
+        li.dataset.value = value;
         ul.appendChild(li);
       });
     };
 
-    fill('group', data.groups);
-    fill('company_name', data.company_names);
-    fill('national_id', data.national_ids);
-    fill('ceo_name', data.ceo_names);
-    fill('ceo_mobile', data.ceo_mobiles);
-    fill('office_manager', data.office_managers);
-    fill('booth_area', data.booth_areas);
-    fill('booth_code', data.booth_codes);
-    // fill('expo_year', data.years); // غیرفعال شد برای نمایش دستی
-    fill('organizer', data.organizers);
-    // fill('location', data.locations); // غیرفعال شد برای نمایش دستی
-    fill('marketing_manager', data.marketing_managers);
-    fill('contact_method', data.contact_methods);
-    fill('status', data.statuses);
-    fill('activity_field', data.activity_fields || []);
+    // پر کردن همه منوها
+    fillDropdown('group', data.groups);
+    fillDropdown('company_name', data.company_names);
+    fillDropdown('national_id', data.national_ids);
+    fillDropdown('registration_number', data.registration_numbers);
+    fillDropdown('economic_number', data.economic_numbers);
+    fillDropdown('workshop_code', data.workshop_codes);
+    fillDropdown('postal_code', data.postal_codes);
+    fillDropdown('phone_number', data.phone_numbers);
+    fillDropdown('fax_number', data.faxes);
+    fillDropdown('website', data.websites);
+    fillDropdown('email', data.emails);
+    fillDropdown('ceo_name', data.ceo_names);
+    fillDropdown('ceo_mobile', data.ceo_mobiles);
+    fillDropdown('office_manager', data.office_managers);
+    fillDropdown('office_manager_phone', data.office_manager_phones);
+    fillDropdown('sales_manager', data.sales_managers);
+    fillDropdown('sales_manager_phone', data.sales_manager_phones);
+    fillDropdown('communication_manager', data.communication_managers);
+    fillDropdown('communication_manager_phone', data.communication_manager_phones);
+    fillDropdown('exhibition_manager', data.exhibition_managers);
+    fillDropdown('exhibition_manager_phone', data.exhibition_manager_phones);
+    fillDropdown('liaison', data.liaisons);
+    fillDropdown('liaison_position', data.liaison_positions);
+    fillDropdown('liaison_mobile', data.liaison_mobiles);
+    fillDropdown('activity_field', data.activity_fields);
+    fillDropdown('main_activity', data.main_activities);
+    fillDropdown('booth_area', data.booth_areas);
+    fillDropdown('booth_code', data.booth_codes);
+    fillDropdown('expo_year', data.expo_years);
+    fillDropdown('organizer', data.organizers);
+    fillDropdown('location', data.locations);
+    fillDropdown('marketing_manager', data.marketing_managers);
+    fillDropdown('contact_method', data.contact_methods);
+    fillDropdown('contact_person', data.contact_persons);
+    fillDropdown('status', data.statuses);
 
-    console.log('همه منوها از n8n پر شدند!');
+    console.log('منوها با موفقیت پر شدند.');
   } catch (e) {
-    alert('خطا: نمی‌تونم به n8n وصل بشم!\nآدرس: http://localhost:5678/webhook/OPTIONS\nآیا n8n روشنه؟');
-    console.error(e);
+    console.error('خطا در بارگذاری:', e);
+    alert('خطا در اتصال به n8n. مقادیر پیش‌فرض نمایش داده می‌شوند.');
   }
 });
 </script>
