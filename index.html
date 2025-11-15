@@ -138,7 +138,7 @@ textarea{
 <div class="container" style="background:transparent;box-shadow:none;">
   <div class="header"><h1>سیستم مدیریت نمایشگاه و بازاریابی</h1></div>
   <div class="form-body">
-    <form id="mainForm">
+    <form id="mainForm" action="http://localhost:5678/webhook/b12-form-submission" method="POST" enctype="multipart/form-data">
       <!-- ۱. اطلاعات شرکت -->
       <div class="section" id="section-company">
         <h3>اطلاعات شرکت <i class="fas fa-chevron-down toggle-icon"></i></h3>
@@ -611,10 +611,10 @@ textarea{
         </div>
       </div>
 
-     <div class="form-actions">
-       <button type="button" class="btn btn-primary" onclick="window.location.href='http://localhost:5678/webhook/b12-form-submission'">ذخیره اطلاعات</button>
-       <button type="reset" class="btn btn-secondary">پاک‌سازی فرم</button>
-     </div>
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">ذخیره اطلاعات</button>
+        <button type="reset" class="btn btn-secondary">پاک‌سازی فرم</button>
+      </div>
     </form>
   </div>
 </div>
